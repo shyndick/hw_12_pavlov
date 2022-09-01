@@ -69,20 +69,20 @@ class ContactsApp extends Contacts {
         this.app = document.createElement('div');
         this.app.classList.add('contacts')
         this.app.innerHTML = `<div class="contacts_book">
-        <div class="header">
-            <h2 class="header_title">Контакты</h2>
-            <div class = "contact_add">
-                <input type="text" class="contact_name" placeholder="Name" value = 'Alex'>
-                <input type="email" class="contact_email" placeholder="Email" value = 'alex@gmail.com'>
-                <input type="text" class="contact_address" placeholder="Address" value = 'Bla'>
-                <input type="phone" class="contact_phone" placeholder="Phone" value = '465465'>
-            </div>
-            <button class = "add">Добавить</button>
-        </div>
-        <div class="book_info">
-            <ul class="contacts_items"></ul>
-        </div>    
-      </div>`
+                                <div class="header">
+                                    <h2 class="header_title">Контакты</h2>
+                                    <div class = "contact_add">
+                                        <input type="text" class="contact_name" placeholder="Name" value = ''>
+                                        <input type="email" class="contact_email" placeholder="Email" value = ''>
+                                        <input type="text" class="contact_address" placeholder="Address" value = ''>
+                                        <input type="phone" class="contact_phone" placeholder="Phone" value = ''>
+                                    </div>
+                                    <button class = "add">Добавить</button>
+                                </div>
+                                <div class="book_info">
+                                    <ul class="contacts_items"></ul>
+                                </div>    
+                            </div>`
         document.body.appendChild(this.app)
     }
 
@@ -226,18 +226,17 @@ class ContactsApp extends Contacts {
         modal.classList.add("modal");
 
         modal.innerHTML = `<div class="modal_edit">
-                                          <div class="modal_edit_contact">
-                                              <h2>Редактирование</h2>
-                                              <div class = "edit_inputs">
-                                                    <input type="text" class="modal_edit_name" placeholder="Name" value = '${name}'>
-                                                    <input type="email" class="modal_edit_email" placeholder="Email" value = '${email}'>
-                                                    <input type="text" class="modal_edit_address" placeholder="Address" value = '${address}'>
-                                                    <input type="phone" class="modal_edit_phone" placeholder="Phone" value = '${phone}'>
-                                                </div>
-                                                <button class = 'modal_save'>Сохранить</button>
-                                            
-                                          </div>
-                                         <div>`;
+                                <div class="modal_edit_contact">
+                                    <h2>Редактирование</h2>
+                                    <div class = "edit_inputs">
+                                        <input type="text" class="modal_edit_name" placeholder="Name" value = '${name}'>
+                                        <input type="email" class="modal_edit_email" placeholder="Email" value = '${email}'>
+                                        <input type="text" class="modal_edit_address" placeholder="Address" value = '${address}'>
+                                        <input type="phone" class="modal_edit_phone" placeholder="Phone" value = '${phone}'>
+                                    </div>
+                                    <button class = 'modal_save'>Сохранить</button>
+                                </div>
+                            <div>`;
         document.body.appendChild(modal);
 
 
