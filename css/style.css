@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #695af7;
+}
+
+.header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header_title {
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.contact_add{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_add input {
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.add {
+    background-color: #00ffc8;
+    width: 60%;
+    height: 33px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 35px 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contacts_book {
+    display: flex;
+}
+
+.contacts_items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact_item {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid ;
+    border-radius: 8px;
+}
+
+.contact p {
+    margin: 5px 2px;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 10px;
+
+    
+}
+
+.edit_btn {
+    background-color: #695af7;
+    color: #fff;
+}
+
+.del_btn {
+    background-color: #695af7;
+    
+    color: #fff;
+    
+}
+
+.book_info {
+    width: 50%;
+    margin-top: 75px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.modal_edit {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_edit_contact {
+    background-color: #00ffc8;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 60%;
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.modal_edit_contact h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.edit_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit_inputs input {
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.modal_save {
+    height: 25px;
+    background-color: #695af7;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+}
